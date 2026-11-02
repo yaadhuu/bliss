@@ -6,6 +6,8 @@
 
 **A visual AI explorer that groups photos by meaning, lets you search them in plain words, and shows the evidence behind every match.**
 
+### [🚀 Live demo](https://bliss-cmmx.onrender.com/) · [🎬 Watch the demo video](https://drive.google.com/file/d/1G0Yd-zwtqapUeW-0QP3DR5pJmUzHqseR/view?usp=sharing)
+
 <p>
   <img alt="Award" src="https://img.shields.io/badge/%F0%9F%8F%86_1st_Place-Winner-gold?style=flat">
   <img alt="Hackathon" src="https://img.shields.io/badge/MLH-Hacktoberfest_Hack_Day-ff6a00?style=flat">
@@ -21,6 +23,7 @@
   <img alt="Gemma" src="https://img.shields.io/badge/Gemma_4-open--weight-4285F4?logo=google&logoColor=white">
   <img alt="SigLIP" src="https://img.shields.io/badge/SigLIP-Apache--2.0-FF6F00">
   <img alt="Cloudinary" src="https://img.shields.io/badge/Cloudinary-CDN-3448C5?logo=cloudinary&logoColor=white">
+  <img alt="Render" src="https://img.shields.io/badge/Deployed_on-Render-46E3B7?logo=render&logoColor=white">
   <img alt="Vercel" src="https://img.shields.io/badge/Vercel-ready-000000?logo=vercel&logoColor=white">
   <br>
   <img alt="Eval accuracy" src="https://img.shields.io/badge/eval_accuracy-92.8%25-brightgreen">
@@ -73,11 +76,12 @@ Photo libraries are huge and unsearchable. Files are named `IMG_4821.jpg`, folde
 
 ---
 
-## 🎬 Launch video
+## 🎬 Demo video and live app
 
-A short launch video for Bliss is being produced with the Hyperframes `/brag` tool, which builds it from this project's own code. The storyboard and composition are prepared; the link will be added here once it is rendered and uploaded.
-
-> **Video link:** _coming soon_
+| | |
+|:--|:--|
+| 🚀 **Live app** | **[https://bliss-cmmx.onrender.com/](https://bliss-cmmx.onrender.com/)** (free hosting: the first load can take up to a minute to wake up) |
+| 🎬 **Demo video** | **[Watch on Google Drive](https://drive.google.com/file/d/1G0Yd-zwtqapUeW-0QP3DR5pJmUzHqseR/view?usp=sharing)** |
 
 ## 📌 At a glance
 
@@ -350,7 +354,14 @@ Needs about 2 GB of free RAM. Model weights download on first run and are **not*
 
 ### 4. Deploy
 
-The built-in backend runs on Vercel's free tier: import the `web/` directory, add the environment variables above, deploy.
+The live demo at **https://bliss-cmmx.onrender.com/** runs on **Render** as a single Node web service (the built-in backend means no separate Python service is needed).
+
+1. Render → **New +** → **Web Service** → connect this repository.
+2. **Root Directory** `web` · **Build** `npm install --legacy-peer-deps && npm run build` · **Start** `npm start`.
+3. Add the environment variables above (the `NEXT_PUBLIC_*` ones before the first build, as they are baked in).
+4. In Supabase → Authentication → URL Configuration, add your Render URL to **Site URL** and **Redirect URLs**.
+
+The same `web/` app also deploys to Vercel's free tier; the built-in API routes were written to fit its limits (shrunk uploads, 60 s function budget).
 
 ---
 
@@ -469,9 +480,9 @@ No. Every table is protected by Row Level Security. A shared-galaxy QR creates a
 </details>
 
 <details>
-<summary><b>The QR link shows a warning page the first time.</b></summary>
+<summary><b>The live site is slow on the first load.</b></summary>
 
-That is the free ngrok tunnel's interstitial. Tap "Visit Site". A deployed domain removes it.
+It runs on a free Render instance, which sleeps when idle. The first request wakes it up (up to about a minute); after that it is fast.
 
 </details>
 
@@ -490,7 +501,7 @@ No. The default backend calls hosted models. The optional Python pipeline runs o
 - [x] Working prototype with a live demo path (QR participation)
 - [x] Repository free of secrets, weights and datasets; `.env.example` files provided
 - [x] Graceful failure: invalid invite, empty galaxy, failed uploads retried, error boundaries
-- [ ] Hosted deployment (runs locally and through a tunnel; the Vercel deploy is prepared but not finished)
+- [x] Hosted deployment: live at [https://bliss-cmmx.onrender.com/](https://bliss-cmmx.onrender.com/)
 
 ---
 

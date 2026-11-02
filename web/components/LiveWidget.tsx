@@ -4,8 +4,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { api, supabase, useSession } from "@/lib/supabase";
 
-// TODO: hardcoded public host for now (ngrok); swap for the real domain after deploy
-const INVITE_BASE = "https://dollop-amaretto-impolite.ngrok-free.dev";
+// QR links point at whatever host is serving this page (Render, localhost, ...), so they always work
+const inviteBase = () => window.location.origin;
 const keyFor = (uid: string) => `bliss:shared-token:${uid}`;
 
 /** Generated in the browser (no outside QR service, works offline). High contrast + error correction for projectors. */
@@ -26,7 +26,7 @@ export default function LiveWidget() {
   const [small, setSmall] = useState<string>("");
   const [large, setLarge] = useState<string>("");
 
-  const link = token ? `${INVITE_BASE}/${token}` : null;
+  const link = token ? `${inviteBase()}/${token}` : null;
 
   // remembered per account; a different login on this browser never inherits someone else's galaxy
   useEffect(() => {
