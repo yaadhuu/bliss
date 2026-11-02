@@ -29,7 +29,6 @@
   <img alt="Eval accuracy" src="https://img.shields.io/badge/eval_accuracy-92.8%25-brightgreen">
   <img alt="Eval set" src="https://img.shields.io/badge/eval_set-69_images-blue">
   <img alt="Secrets" src="https://img.shields.io/badge/secrets_committed-0-success">
-  <img alt="Status" src="https://img.shields.io/badge/status-1st_Place_Winner-gold">
 </p>
 
 > 🏆 **1st Place Winner** at **MLH Hacktoberfest Hack Day** · Built by **Team ACDC**
@@ -94,7 +93,7 @@ Photo libraries are huge and unsearchable. Files are named `IMG_4821.jpg`, folde
 | 👥 **Live participation** | scan a QR, add a photo, **no account needed** |
 | 🔐 **Privacy** | database-enforced per-user isolation (Row Level Security) |
 | 🧩 **Open-weight AI** | Gemma 4 for understanding; fully open SigLIP path in the Python pipeline |
-| 💸 **Runs on free tiers** | Vercel, Supabase, Cloudinary, Gemini API |
+| 💸 **Runs on free tiers** | Render or Vercel, Supabase, Cloudinary, Gemini API |
 
 <p align="right"><a href="#bliss">⬆ back to top</a></p>
 
@@ -286,7 +285,7 @@ Your query is embedded the same way. A photo counts as a match only if a query w
 | **AI** | Gemma 4 (vision and text), Gemini embeddings, optional SigLIP + YOLO11 + OpenCV |
 | **Data** | Supabase: Postgres, `pgvector`, Auth, Row Level Security, Realtime |
 | **Media** | Cloudinary (signed uploads, on-the-fly thumbnails) |
-| **Hosting** | Vercel (frontend and API), Supabase and Cloudinary free tiers |
+| **Hosting** | Render (live demo) or Vercel for the frontend and API; Supabase and Cloudinary free tiers |
 
 </details>
 
@@ -386,7 +385,7 @@ The same `web/` app also deploys to Vercel's free tier; the built-in API routes 
 
 Read this fairly:
 
-- This number is for **SigLIP + YOLO without the verifier**. I did not complete a full `--verify` run, so the verifier's effect on the 69 images is not measured. In spot checks it fixed several of the remaining low-confidence misses.
+- This number is for **SigLIP + YOLO without the verifier**. We did not complete a full `--verify` run, so the verifier's effect on the 69 images is not measured. In spot checks it fixed several of the remaining low-confidence misses.
 - The built-in (default) backend uses Gemma 4 directly and is **not** covered by this eval. It was spot-checked, not benchmarked.
 - 69 images is a small sample; treat percentages as indicative.
 
@@ -507,22 +506,18 @@ No. The default backend calls hosted models. The optional Python pipeline runs o
 
 ## 👥 Team & Contributors
 
-Bliss was created and developed by **Team ACDC** — 🥇 **1st Place Winners** at **MLH Hacktoberfest Hack Day**:
+Bliss was designed and built by **Team ACDC**, 🥇 **1st Place Winners** at **MLH Hacktoberfest Hack Day**. It is a team project: idea, design, AI pipeline, frontend, backend and demo were all worked on together.
 
-| Contributor | Role | GitHub |
-|---|---|---|
-| **yaadhuu** | Lead Contributor / Architecture & Full-stack | [@yaadhuu](https://github.com/yaadhuu) |
+| | |
+|---|---|
+| **Team** | ACDC |
+| **Repository** | [github.com/yaadhuu/bliss](https://github.com/yaadhuu/bliss) (hosted under [@yaadhuu](https://github.com/yaadhuu)) |
 
-<br/>
+Contributions and issues are welcome.
 
 <div align="center">
 
-<a href="https://github.com/yaadhuu">
-  <img src="https://github.com/yaadhuu.png" width="90" height="90" style="border-radius: 50%;" alt="yaadhuu" /><br/>
-  <sub><b>@yaadhuu</b></sub>
-</a>
-
-<br/><br/>
+<br/>
 
 🏆 **1st Place Winner** · **MLH Hacktoberfest Hack Day** · **Team ACDC**
 
