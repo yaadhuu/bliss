@@ -7,6 +7,10 @@
 **A visual AI explorer that groups photos by meaning, lets you search them in plain words, and shows the evidence behind every match.**
 
 <p>
+  <img alt="Award" src="https://img.shields.io/badge/%F0%9F%8F%86_1st_Place-Winner-gold?style=flat">
+  <img alt="Hackathon" src="https://img.shields.io/badge/MLH-Hacktoberfest_Hack_Day-ff6a00?style=flat">
+  <img alt="Team" src="https://img.shields.io/badge/Team-ACDC-7928CA?style=flat">
+  <br>
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-14-000000?logo=nextdotjs&logoColor=white">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white">
   <img alt="React" src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black">
@@ -22,13 +26,14 @@
   <img alt="Eval accuracy" src="https://img.shields.io/badge/eval_accuracy-92.8%25-brightgreen">
   <img alt="Eval set" src="https://img.shields.io/badge/eval_set-69_images-blue">
   <img alt="Secrets" src="https://img.shields.io/badge/secrets_committed-0-success">
-  <img alt="Status" src="https://img.shields.io/badge/status-hackathon_prototype-orange">
-  <img alt="Hackathon" src="https://img.shields.io/badge/MLH-Hacktoberfest_Hack_Day-ff6a00">
+  <img alt="Status" src="https://img.shields.io/badge/status-1st_Place_Winner-gold">
 </p>
+
+> 🏆 **1st Place Winner** at **MLH Hacktoberfest Hack Day** · Built by **Team ACDC**
 
 <sub>`computer-vision` · `multimodal-ai` · `semantic-search` · `embeddings` · `pgvector` · `gemma` · `open-weight` · `three-js` · `nextjs` · `photo-search` · `visual-explorer` · `hackathon`</sub>
 
-[For evaluators](#-for-evaluators-start-here) · [Demo script](#-2-minute-demo-script) · [Architecture](#-architecture) · [AI pipeline](#-the-ai-pipeline) · [Run it](#-run-it-locally) · [Models and licences](#-models-and-licences) · [Honest limits](#honest-limits)
+[For evaluators](#-for-evaluators-start-here) · [Demo script](#-2-minute-demo-script) · [Architecture](#-architecture) · [AI pipeline](#-the-ai-pipeline) · [Run it](#-run-it-locally) · [Models and licences](#-models-and-licences) · [Honest limits](#honest-limits) · [Contributors](#-team--contributors)
 
 </div>
 
@@ -43,6 +48,7 @@
 6. [Run it locally](#-run-it-locally) · [Evaluation](#-evaluation)
 7. [Models and licences](#-models-and-licences) · [Repository layout](#-repository-layout)
 8. [Security](#-security-and-privacy) · [Honest limits](#honest-limits) · [FAQ](#-faq) · [Compliance](#-hackathon-compliance)
+9. [Team & Contributors](#-team--contributors)
 
 </details>
 
@@ -488,8 +494,25 @@ No. The default backend calls hosted models. The optional Python pipeline runs o
 
 ---
 
+## 👥 Team & Contributors
+
+Bliss was created and developed by **Team ACDC** — 🥇 **1st Place Winners** at **MLH Hacktoberfest Hack Day**:
+
+| Contributor | Role | GitHub |
+|---|---|---|
+| **yaadhuu** | Lead Contributor / Architecture & Full-stack | [@yaadhuu](https://github.com/yaadhuu) |
+
+<br/>
+
 <div align="center">
 
-Built in one day for **MLH Hacktoberfest Hack Day** · Team ACDC
+<a href="https://github.com/yaadhuu">
+  <img src="https://github.com/yaadhuu.png" width="90" height="90" style="border-radius: 50%;" alt="yaadhuu" /><br/>
+  <sub><b>@yaadhuu</b></sub>
+</a>
+
+<br/><br/>
+
+🏆 **1st Place Winner** · **MLH Hacktoberfest Hack Day** · **Team ACDC**
 
 </div>
